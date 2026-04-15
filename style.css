@@ -82,3 +82,60 @@ nav a {
     color: inherit;
     text-decoration: none;
 }
+
+
+
+.rodape-container {
+    background-color: var(--preto-graxa);
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding: 60px 0;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center; 
+    gap: 80px; 
+}
+
+
+.coluna-footer {
+    min-width: 300px;
+}
+
+
+.subtitulo-footer {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #FFFFFF;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+
+.linha-divisora {
+    width: 100%;
+    height: 1px;
+    background-color: #444; 
+    margin-bottom: 20px;
+}
+
+
+.texto-corpo-footer p {
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF !important;
+    font-size: 0.95rem;
+    margin: 5px 0;
+    line-height: 1.4;
+}
+
+
+.zap-destaque {
+    font-family: 'Anton', sans-serif; 
+    color: #FFFFFF;
+    font-size: 2.2rem;
+    margin-top: 20px;
+}
