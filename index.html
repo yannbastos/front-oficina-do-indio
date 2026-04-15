@@ -1,7 +1,8 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Centro Automotivo - Tabela de Serviços</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Roboto:wght@400&display=swap"
@@ -12,7 +13,7 @@
   <body>
     <header class="cabecalho-principal">
       <div class="logo-site">
-        <img src="assets/indio2.png" alt="Logo Oficina do Índio" />
+        <img src="assets/Indio2.png" alt="Logo Oficina do Índio" />
       </div>
       <div class="conteudo-header">
         <h1 class="titulo">Oficina do Índio</h1>
@@ -28,30 +29,21 @@
             "
           >
             <li>
-              <a href="#" style="text-decoration: none; color: inherit"
-                >Início</a
-              >
+              <a href="#">Início</a>
             </li>
             <li>
-              <a href="#" style="text-decoration: none; color: inherit"
-                >Serviços</a
-              >
+              <a href="#">Serviços</a>
             </li>
             <li>
               <a
                 href="https://www.google.com/maps/place/Felmak+Ind%C3%BAstria+e+Com%C3%A9rcio+de+M%C3%A1quinas/@-26.5097219,-49.1143151,3a,72.2y,346.42h,93.83t/data=!3m7!1e1!3m5!1s7PEscb634aIhVpwPWWst5g!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D-3.8315951466737204%26panoid%3D7PEscb634aIhVpwPWWst5g%26yaw%3D346.4233064825721!7i16384!8i8192!4m6!3m5!1s0x94de959bc41b683d:0xf717cbf7c8d85d97!8m2!3d-26.509645!4d-49.114308!16s%2Fg%2F11fd4t3gtv?entry=ttu&g_ep=EgoyMDI2MDQxMi4wIKXMDSoASAFQAw%3D%3D"
                 target="_blank"
                 rel="noopener noreferrer"
-                style="text-decoration: none; color: inherit"
                 >A Oficina</a
               >
             </li>
             <li>
-              <a
-                href="#sessao-contato"
-                style="text-decoration: none; color: inherit"
-                >Contato</a
-              >
+              <a href="#sessao-contato">Contato</a>
             </li>
           </ul>
         </nav>
@@ -65,62 +57,98 @@
       </div>
     </header>
 
-    <hr />
-
     <main>
-      <h2 class="titulo">Sobre a Oficina do Índio</h2>
-      <p class="texto-corpo">
-        A Oficina do Índio é uma mecânica especializada em manutenção e reparo de veículos,
-        unindo décadas de tradição às tecnologias mais avançadas de diagnóstico automotivo.
-        Oferecemos serviços de alta precisão, atendimento personalizado e preços competitivos,
-        garantindo que seu veículo receba o cuidado técnico necessário para rodar com máximo desempenho e segurança.
-      </p>
+      <section id="sobre">
+        <h2 class="titulo">Sobre a Oficina do Índio</h2>
+        <p class="texto-corpo">
+          A Oficina do Índio é uma oficina mecânica especializada em manutenção e
+          reparo de veículos, com anos de experiência no mercado. Oferecemos
+          serviços de qualidade, atendimento personalizado e preços competitivos
+          para garantir a satisfação de nossos clientes.
+        </p>
+      </section>
 
-      <h2 class="titulo">Nossos Serviços e Valores</h2>
+      <section id="tabela-precos">
+        <h2 class="titulo">Nossos Serviços e Valores</h2>
+        <table>
+          <thead>
+            <tr class="subtitulo">
+              <th>Serviço</th>
+              <th>Prazo Médio</th>
+              <th>Valor (A partir de)</th>
+            </tr>
+          </thead>
+          <tbody class="texto-corpo">
+            <tr>
+              <td>Troca de Óleo</td>
+              <td>1h30min</td>
+              <td>R$ 120,00</td>
+            </tr>
+            <tr>
+              <td>Troca de Pastilha de Freio</td>
+              <td>2h</td>
+              <td>R$ 250,00</td>
+            </tr>
+            <tr>
+              <td>Limpeza no Sistema de Arrefecimento</td>
+              <td>1h30min</td>
+              <td>R$ 200,00</td>
+            </tr>
+            <tr>
+              <td>Limpeza de Sistema de EGR</td>
+              <td>6h</td>
+              <td>R$ 720,00</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
 
-      <section class="cards-servicos">
-        <article class="card-servico">
-          <div class="card-icone">🛠️</div>
-          <h3>Manutenção Preventiva e Corretiva</h3>
-          <p>
-            Todos os itens indicados pela montadora, incluindo desgaste por
-            tempo e quilometragem.
-          </p>
-        </article>
-        <article class="card-servico">
-          <div class="card-icone">🔍</div>
-          <h3>Diagnóstico Eletrônico Avançado</h3>
-          <p>
-            Luz de injeção, ABS, airbag e falhas no funcionamento do veículo.
-          </p>
-        </article>
-        <article class="card-servico">
-          <div class="card-icone">🚗</div>
-          <h3>Mecânica Especializada</h3>
-          <p>
-            Revisamos todos os itens de segurança, eficiência e performance.
-          </p>
-        </article>
-        <article class="card-servico">
-          <div class="card-icone">🛡️</div>
-          <h3>Suspensão e Sistema de Segurança</h3>
-          <p>
-            Ajustes, reparos e revisão para máxima estabilidade e segurança.
-          </p>
-        </article>
-        <article class="card-servico">
-          <div class="card-icone">⛽</div>
-          <h3>Motores Diesel e Gasolina</h3>
-          <p>Pane, falhas e manutenção, incluindo troca de óleo e fluidos.</p>
-        </article>
-        <article class="card-servico">
-          <div class="card-icone">🔧</div>
-          <h3>Embreagem, Freios e Troca de Óleo</h3>
-          <p>
-            Serviços essenciais para a segurança do seu veículo, com qualidade e
-            agilidade.
-          </p>
-        </article>
+      <section id="servicos-cards">
+        <h2 class="titulo">Especialidades da Oficina</h2>
+        <div class="cards-servicos">
+          <article class="card-servico">
+            <div class="card-icone">🛠️</div>
+            <h3>Manutenção Preventiva e Corretiva</h3>
+            <p>
+              Todos os itens indicados pela montadora, incluindo desgaste por
+              tempo e quilometragem.
+            </p>
+          </article>
+          <article class="card-servico">
+            <div class="card-icone">🔍</div>
+            <h3>Diagnóstico Eletrônico Avançado</h3>
+            <p>
+              Luz de injeção, ABS, airbag e falhas no funcionamento do veículo.
+            </p>
+          </article>
+          <article class="card-servico">
+            <div class="card-icone">🚗</div>
+            <h3>Mecânica Especializada</h3>
+            <p>
+              Revisamos todos os itens de segurança, eficiência e performance.
+            </p>
+          </article>
+          <article class="card-servico">
+            <div class="card-icone">🛡️</div>
+            <h3>Suspensão e Sistema de Segurança</h3>
+            <p>
+              Ajustes, reparos e revisão para máxima estabilidade e segurança.
+            </p>
+          </article>
+          <article class="card-servico">
+            <div class="card-icone">⛽</div>
+            <h3>Motores Diesel e Gasolina</h3>
+            <p>Pane, falhas e manutenção, incluindo troca de óleo e fluidos.</p>
+          </article>
+          <article class="card-servico">
+            <div class="card-icone">🔧</div>
+            <h3>Embreagem, Freios e Troca de Óleo</h3>
+            <p>
+              Serviços essenciais para a segurança do seu veículo, com qualidade e
+              agilidade.
+            </p>
+          </article>
+        </div>
       </section>
 
       <section id="sessao-contato" class="container-agendamento">
@@ -129,7 +157,6 @@
             src="assets/Imagem Exterior Oficina.png"
             alt="Oficina do Índio"
             height="350"
-            ,
             width="600"
           />
         </div>
@@ -150,43 +177,45 @@
         </div>
       </section>
 
-      <h2 class="titulo">Entre em Contato</h2>
-      <form
-        action="https://formspree.io/f/mqeweqrk"
-        method="POST"
-        class="formulario"
-      >
-        <div class="grupo-formulario">
-          <label for="nome" class="rotulo">Nome *</label>
-          <input
-            type="text"
-            id="nome"
-            name="nome"
-            required
-            placeholder="Seu nome completo"
-          />
-        </div>
-        <div class="grupo-formulario">
-          <label for="email" class="rotulo">Email *</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            required
-            placeholder="seu@email.com"
-          />
-        </div>
-        <div class="grupo-formulario">
-          <label for="mensagem" class="rotulo">Mensagem</label>
-          <textarea
-            id="mensagem"
-            name="mensagem"
-            placeholder="Sua mensagem aqui..."
-            rows="5"
-          ></textarea>
-        </div>
-        <button type="submit" class="botao-enviar">Enviar</button>
-      </form>
+      <section id="contato-form">
+        <h2 class="titulo">Entre em Contato</h2>
+        <form
+          action="https://formspree.io/f/mqeweqrk"
+          method="POST"
+          class="formulario"
+        >
+          <div class="grupo-formulario">
+            <label for="nome" class="rotulo">Nome *</label>
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              required
+              placeholder="Seu nome completo"
+            />
+          </div>
+          <div class="grupo-formulario">
+            <label for="email" class="rotulo">Email *</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="seu@email.com"
+            />
+          </div>
+          <div class="grupo-formulario">
+            <label for="mensagem" class="rotulo">Mensagem</label>
+            <textarea
+              id="mensagem"
+              name="mensagem"
+              placeholder="Sua mensagem aqui..."
+              rows="5"
+            ></textarea>
+          </div>
+          <button type="submit" class="botao-enviar">Enviar</button>
+        </form>
+      </section>
     </main>
 
     <footer class="rodape-container">
