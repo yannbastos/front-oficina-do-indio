@@ -433,9 +433,26 @@ body {
 }
 
 .cabecalho-principal {
+  background-color: var(--preto-graxa);
   display: flex;
   align-items: center;
   gap: 25px;
   margin-top: 0;
   margin-bottom: 25px;
+}
+
+.cabecalho-principal .subtitulo {
+  color: #ffffff;
+}
+
+.cabecalho-principal nav a {
+  color: #ffffff;
+}
+
+.cabecalho-principal nav a:hover {
+  color: var(--laranja-industrial);
+}
+
+.cabecalho-principal .horarios {
+  color: #ffffff;
 }
