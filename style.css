@@ -5,6 +5,17 @@
     --cinza-fundo: #F5F5F5;
 }
 
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 40px;
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+
 .titulo {
     font-family: 'Anton', sans-serif;
     text-transform: uppercase;
@@ -33,6 +44,10 @@
     line-height: 1.6;
 }
 
+nav a {
+    color: inherit;
+    text-decoration: none;
+}
 
 table {
     border-collapse: collapse;
@@ -42,10 +57,8 @@ table {
     border: none;
 }
 
-
 thead tr.subtitulo {
     background-color: var(--preto-graxa);
-    margin-top: 0;
 }
 
 th {
@@ -67,23 +80,47 @@ tbody tr:nth-child(odd) {
     background-color: #FFFFFF;
 }
 
-
-footer {
-    margin-top: 30px;
+.container-agendamento {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 80px 0;
+    flex-wrap: wrap;
 }
 
-footer hr {
-    border: none;
-    border-top: 1px solid #ddd;
-    margin-bottom: 20px;
+.bloco-imagem img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
 }
 
-nav a {
-    color: inherit;
+.bloco-texto {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+}
+
+.botao-zap {
+    display: inline-flex;
+    align-items: center;
     text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
+    color: var(--preto-graxa);
+    font-size: 1.5rem;
+    margin-top: 20px;
+    transition: transform 0.2s;
 }
 
+.botao-zap:hover {
+    transform: translateX(10px);
+}
 
+.botao-zap .seta {
+    color: var(--laranja-industrial);
+    margin-right: 15px;
+    font-size: 1.8rem;
+}
 
 .rodape-container {
     background-color: var(--preto-graxa);
@@ -97,14 +134,13 @@ nav a {
     margin-top: 50px;
     display: flex;
     justify-content: center; 
-    gap: 80px; 
+    gap: 80px;
+    flex-wrap: wrap;
 }
-
 
 .coluna-footer {
     min-width: 300px;
 }
-
 
 .subtitulo-footer {
     font-family: 'Bebas Neue', sans-serif;
@@ -115,14 +151,12 @@ nav a {
     letter-spacing: 1px;
 }
 
-
 .linha-divisora {
     width: 100%;
     height: 1px;
     background-color: #444; 
     margin-bottom: 20px;
 }
-
 
 .texto-corpo-footer p {
     font-family: 'Roboto', sans-serif;
@@ -131,7 +165,6 @@ nav a {
     margin: 5px 0;
     line-height: 1.4;
 }
-
 
 .zap-destaque {
     font-family: 'Anton', sans-serif; 
