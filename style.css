@@ -1,201 +1,208 @@
 :root {
-    --laranja-industrial: #E67E22;
-    --preto-graxa: #1A1A1B;
-    --cinza-metal: #2B2D42;
-    --cinza-fundo: #F5F5F5;
+  --laranja-industrial: #e67e22;
+  --preto-graxa: #1a1a1b;
+  --cinza-metal: #2b2d42;
+  --cinza-fundo: #f5f5f5;
 }
 
 html {
-    scroll-behavior: smooth;
-    overflow-x: hidden;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
-    margin: 40px;
-    background-color: #ffffff;
-    overflow-x: hidden;
+  margin: 40px;
+  background-color: #ffffff;
+  overflow-x: hidden;
 }
 
 .titulo {
-    font-family: 'Anton', sans-serif;
-    text-transform: uppercase;
-    font-size: 2.5rem; 
-    line-height: 1.1;
-    letter-spacing: 0.5px; 
-    color: var(--laranja-industrial);          
-    margin-bottom: 20px;
-    display: block;
+  font-family: "Anton", sans-serif;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  line-height: 1.1;
+  letter-spacing: 0.5px;
+  color: var(--laranja-industrial);
+  margin-bottom: 20px;
+  display: block;
 }
 
 .subtitulo {
-    font-family: 'Bebas Neue', sans-serif;
-    font-weight: 400;
-    color: var(--preto-graxa);
-    text-transform: uppercase;
-    font-size: 1.4rem;
-    letter-spacing: 1px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  color: var(--preto-graxa);
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
 }
 
 .texto-corpo {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 1rem; 
-    color: var(--cinza-metal);
-    line-height: 1.6;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--cinza-metal);
+  line-height: 1.6;
 }
 
 nav a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 table {
-    border-collapse: collapse;
-    width: 100%;
-    max-width: 750px; 
-    margin: 20px 0;
-    border: none;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 750px;
+  margin: 20px 0;
+  border: none;
 }
 
 thead tr.subtitulo {
-    background-color: var(--preto-graxa);
+  background-color: var(--preto-graxa);
 }
 
 th {
-    color: #FFFFFF;
-    text-align: left;
-    padding: 15px;
+  color: #ffffff;
+  text-align: left;
+  padding: 15px;
 }
 
 tbody td {
-    padding: 12px 15px;
-    border: none;
+  padding: 12px 15px;
+  border: none;
 }
 
 tbody tr:nth-child(even) {
-    background-color: var(--cinza-fundo);
+  background-color: var(--cinza-fundo);
 }
 
 tbody tr:nth-child(odd) {
-    background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .container-agendamento {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-    margin: 80px 0;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 40px;
+  margin: 80px 0;
+  flex-wrap: wrap;
+}
+
+.bloco-imagem {
+  text-align: left;
+  max-width: 750px;
+  width: 100%;
 }
 
 .bloco-imagem img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 4px;
+  display: block;
+  margin: 0;
+  width: 100%;
+  max-width: 750px;
+  height: auto;
+  border-radius: 4px;
 }
 
 .bloco-texto {
-    flex: 1;
-    min-width: 300px;
-    max-width: 500px;
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
 }
 
 .botao-zap {
-    display: inline-flex;
-    align-items: center;
-    text-decoration: none;
-    font-family: 'Bebas Neue', sans-serif;
-    color: var(--preto-graxa);
-    font-size: 1.5rem;
-    margin-top: 20px;
-    transition: transform 0.2s;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  font-family: "Bebas Neue", sans-serif;
+  color: var(--preto-graxa);
+  font-size: 1.5rem;
+  margin-top: 20px;
+  transition: transform 0.2s;
 }
 
 .botao-zap:hover {
-    transform: translateX(10px);
+  transform: translateX(10px);
 }
 
 .botao-zap .seta {
-    color: var(--laranja-industrial);
-    margin-right: 15px;
-    font-size: 1.8rem;
+  color: var(--laranja-industrial);
+  margin-right: 15px;
+  font-size: 1.8rem;
 }
 
 .rodape-container {
-    background-color: var(--preto-graxa);
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    padding: 60px 0;
-    margin-top: 50px;
-    display: flex;
-    justify-content: center; 
-    gap: 80px;
-    flex-wrap: wrap;
+  background-color: var(--preto-graxa);
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  padding: 60px 0;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
 }
 
 .coluna-footer {
-    min-width: 300px;
+  min-width: 300px;
 }
 
 .subtitulo-footer {
-    font-family: 'Bebas Neue', sans-serif;
-    color: #FFFFFF;
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    margin-bottom: 5px;
-    letter-spacing: 1px;
+  font-family: "Bebas Neue", sans-serif;
+  color: #ffffff;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
 }
 
 .linha-divisora {
-    width: 100%;
-    height: 1px;
-    background-color: #444; 
-    margin-bottom: 20px;
+  width: 100%;
+  height: 1px;
+  background-color: #444;
+  margin-bottom: 20px;
 }
 
 .texto-corpo-footer p {
-    font-family: 'Roboto', sans-serif;
-    color: #FFFFFF !important;
-    font-size: 0.95rem;
-    margin: 5px 0;
-    line-height: 1.4;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff !important;
+  font-size: 0.95rem;
+  margin: 5px 0;
+  line-height: 1.4;
 }
 
 .zap-destaque {
-    font-family: 'Anton', sans-serif; 
-    color: #FFFFFF;
-    font-size: 2.2rem;
-    margin-top: 20px;
+  font-family: "Anton", sans-serif;
+  color: #ffffff;
+  font-size: 2.2rem;
+  margin-top: 20px;
 }
 
 body {
-    margin: 0;
-    padding: 10px 40px;
-    background-color: #ffffff;
-    overflow-x: hidden;
+  margin: 0;
+  padding: 10px 40px;
+  background-color: #ffffff;
+  overflow-x: hidden;
 }
-
 
 .logo-site img {
-    height: 120px;
-    width: auto;
-    display: block;
+  height: 120px;
+  width: auto;
+  display: block;
 }
 
-
 .conteudo-header nav {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 
 .cabecalho-principal {
-    display: flex;
-    align-items: center;
-    gap: 25px;
-    margin-top: 0;
-    margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-top: 0;
+  margin-bottom: 25px;
 }
