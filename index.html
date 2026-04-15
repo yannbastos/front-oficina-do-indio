@@ -1,18 +1,20 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <title>Centro Automotivo - Tabela de Serviços</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header>
-      <h1>Oficina do Índio</h1>
+      <h1 class="titulo">Oficina do Índio</h1>
       <nav>
-        <ul>
-          <li><a href="#">Início</a></li>
-          <li><a href="#">Serviços</a></li>
-          <li><a href="#">A Oficina</a></li>
-          <li><a href="#">Contato</a></li>
+        <ul class="subtitulo" style="list-style: none; display: flex; gap: 20px; padding: 0;">
+          <li><a href="#" style="text-decoration: none; color: inherit;">Início</a></li>
+          <li><a href="#" style="text-decoration: none; color: inherit;">Serviços</a></li>
+          <li><a href="#" style="text-decoration: none; color: inherit;">A Oficina</a></li>
+          <li><a href="#" style="text-decoration: none; color: inherit;">Contato</a></li>
         </ul>
       </nav>
     </header>
@@ -20,17 +22,17 @@
     <hr />
 
     <main>
-      <h2>Nossos Serviços e Valores</h2>
+      <h2 class="titulo">Nossos Serviços e Valores</h2>
 
-      <table border="1" width="100%" cellpadding="10" cellspacing="0">
+      <table>
         <thead>
-          <tr>
+          <tr class="subtitulo">
             <th>Serviço</th>
             <th>Prazo Médio</th>
             <th>Valor (A partir de)</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody class="texto-corpo">
           <tr>
             <td>Troca de Óleo</td>
             <td>1h30min</td>
@@ -55,15 +57,15 @@
       </table>
     </main>
 
-    <br />
-
     <footer>
       <hr />
-      <p><strong>Oficina do Índio - Centro Automotivo</strong></p>
-      <p>Rua João Januário Ayroso, 3680 - Fundos</p>
-      <p>São Luís - Jaraguá do Sul / SC</p>
-      <p>CNPJ: 60.029.411/0001-31</p>
-      <p>Telefone / WhatsApp: (47) 9995-9655</p>
+      <div class="texto-corpo">
+        <p><strong>Oficina do Índio - Centro Automotivo</strong></p>
+        <p>Rua João Januário Ayroso, 3680 - Fundos</p>
+        <p>São Luís - Jaraguá do Sul / SC</p>
+        <p>CNPJ: 60.029.411/0001-31</p>
+        <p>Telefone / WhatsApp: (47) 9995-9655</p>
+      </div>
     </footer>
   </body>
 </html>
