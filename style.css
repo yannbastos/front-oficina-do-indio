@@ -11,11 +11,82 @@ html {
 }
 
 body {
-  position: relative;
-  margin: 40px;
+  margin: 0;
   padding: 0;
   background-color: #ffffff;
   overflow-x: hidden;
+}
+
+main {
+  padding: 40px;
+}
+
+.cabecalho-principal {
+  background-color: var(--preto-graxa);
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  padding: 30px 40px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  box-sizing: border-box;
+}
+
+.logo-site img {
+  height: 140px;
+  width: auto;
+  display: block;
+}
+
+.conteudo-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.conteudo-header .titulo {
+  margin: 0;
+  color: var(--laranja-industrial);
+  font-family: "Anton", sans-serif;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  line-height: 1.1;
+}
+
+.conteudo-header nav {
+  margin-top: 15px;
+}
+
+.cabecalho-principal nav a {
+  color: #ffffff !important;
+  text-decoration: none;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.cabecalho-principal nav a:hover {
+  color: var(--laranja-industrial) !important;
+}
+
+.horarios-container {
+  margin-left: auto;
+  text-align: right;
+}
+
+.horarios-container .subtitulo {
+  color: #ffffff !important;
+  margin-bottom: 5px;
+}
+
+.horarios-container .horarios {
+  color: #ffffff !important;
+  margin: 0;
 }
 
 .titulo {
@@ -64,9 +135,7 @@ body {
   border-radius: 12px;
   padding: 28px 24px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .card-servico:hover {
@@ -104,10 +173,6 @@ body {
   line-height: 1.6;
 }
 
-.horarios {
-  text-align: right;
-}
-
 .formulario {
   display: flex;
   flex-direction: column;
@@ -141,13 +206,6 @@ body {
   resize: vertical;
 }
 
-.formulario input:focus,
-.formulario textarea:focus {
-  outline: none;
-  border-color: var(--laranja-industrial);
-  box-shadow: 0 0 5px rgba(230, 126, 34, 0.3);
-}
-
 .botao-enviar {
   padding: 12px 30px;
   background-color: var(--laranja-industrial);
@@ -159,24 +217,8 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.5px;
   cursor: pointer;
-  transition:
-    background-color 0.3s,
-    transform 0.2s;
+  transition: background-color 0.3s, transform 0.2s;
   max-width: 200px;
-}
-
-.botao-enviar:hover {
-  background-color: #d46a1a;
-  transform: translateY(-2px);
-}
-
-.botao-enviar:active {
-  transform: translateY(0);
-}
-
-nav a {
-  color: inherit;
-  text-decoration: none;
 }
 
 .container-agendamento {
@@ -218,10 +260,6 @@ nav a {
   font-size: 1.5rem;
   margin-top: 20px;
   transition: transform 0.2s;
-}
-
-.botao-zap:hover {
-  transform: translateX(10px);
 }
 
 .botao-zap .seta {
@@ -279,55 +317,4 @@ nav a {
   color: #ffffff;
   font-size: 2.2rem;
   margin-top: 20px;
-}
-
-.horarios-container {
-  position: absolute;
-  top: 20px;
-  right: 40px;
-  text-align: right;
-  max-width: 260px;
-}
-
-.horarios-container .subtitulo {
-  margin-bottom: 5px;
-}
-
-.horarios-container .texto-corpo {
-  margin: 0;
-}
-
-.logo-site img {
-  height: 120px;
-  width: auto;
-  display: block;
-}
-
-.conteudo-header nav {
-  margin-top: 15px;
-}
-
-.cabecalho-principal {
-  background-color: var(--preto-graxa);
-  display: flex;
-  align-items: center;
-  gap: 25px;
-  margin-top: 0;
-  margin-bottom: 25px;
-}
-
-.cabecalho-principal .subtitulo {
-  color: #ffffff;
-}
-
-.cabecalho-principal nav a {
-  color: #ffffff;
-}
-
-.cabecalho-principal nav a:hover {
-  color: var(--laranja-industrial);
-}
-
-.cabecalho-principal .horarios {
-  color: #ffffff;
 }
