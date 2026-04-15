@@ -15,6 +15,7 @@ body {
   padding: 0;
   background-color: #ffffff;
   overflow-x: hidden;
+  padding-top: 180px;
 }
 
 main {
@@ -24,18 +25,17 @@ main {
 /* --- HEADER --- */
 .cabecalho-principal {
   background-color: var(--preto-graxa);
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  padding: 30px 40px;
+  width: 100%;           
+  position: fixed;       
+  top: 0;                
+  left: 0;               
+  z-index: 1000;         
+  padding: 20px 40px;    
   display: flex;
   align-items: center;
   gap: 25px;
   box-sizing: border-box;
-}
+}   
 
 .logo-site img {
   height: 140px;
@@ -52,7 +52,6 @@ main {
   line-height: 1.1;
 }
 
-/* AJUSTE AQUI: Aumentei a margem para descer o menu */
 .conteudo-header nav {
   margin-top: 30px;
 }
