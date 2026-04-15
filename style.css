@@ -1,0 +1,17 @@
+:root {
+    --laranja-industrial: #E67E22;
+    --preto-graxa: #1A1A1B;
+    --cinza-metal: #2B2D42;
+}
+
+
+.titulo {
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    font-size: 2.5rem; 
+    line-height: 1.1;
+    letter-spacing: 0.5px; 
+    color: var(--laranja-industrial);         
+    margin-bottom: 20px;
+
+}
