@@ -17,11 +17,12 @@
 }
 
 .subtitulo {
-    font-family: 'Anton', sans-serif;
-    color: var(--cinza-metal);
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    color: var(--preto-graxa);
     text-transform: uppercase;
-    font-size: 1.2rem;     
-    letter-spacing: 0.5px;  
+    font-size: 1.4rem;
+    letter-spacing: 1px;
     line-height: 1.2;
     margin-top: -10px;
 }
