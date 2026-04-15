@@ -22,7 +22,6 @@ main {
   padding: 40px;
 }
 
-/* --- HEADER --- */
 .cabecalho-principal {
   background-color: var(--preto-graxa);
   width: 100%;           
@@ -84,7 +83,6 @@ main {
   margin: 0;
 }
 
-/* --- TEXTOS --- */
 .titulo {
   font-family: "Anton", sans-serif;
   text-transform: uppercase;
@@ -110,7 +108,6 @@ main {
   line-height: 1.6;
 }
 
-/* --- TABELA --- */
 table {
   border-collapse: collapse;
   width: 100%;
@@ -140,7 +137,6 @@ tbody tr:nth-child(even) {
   background-color: var(--cinza-fundo);
 }
 
-/* --- CARDS --- */
 .cards-servicos {
   display: grid;
   gap: 20px;
@@ -194,7 +190,6 @@ tbody tr:nth-child(even) {
   font-size: 0.96rem;
 }
 
-/* --- AGENDAMENTO --- */
 .container-agendamento {
   display: flex;
   align-items: flex-start;
@@ -228,7 +223,6 @@ tbody tr:nth-child(even) {
   font-size: 1.8rem;
 }
 
-/* --- FORMULÁRIO --- */
 .formulario {
   display: flex;
   flex-direction: column;
@@ -287,14 +281,12 @@ tbody tr:nth-child(even) {
   transform: translateY(-2px);
 }
 
-/* --- DIVISÓRIAS --- */
 #sobre, #tabela-precos, #servicos-cards, .container-agendamento {
   border-bottom: 1px solid #444;
   padding-bottom: 50px;
   margin-bottom: 50px;
 }
 
-/* --- FOOTER --- */
 .rodape-container {
   background-color: var(--preto-graxa);
   width: 100vw;
